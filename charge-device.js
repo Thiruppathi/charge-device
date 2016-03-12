@@ -22,7 +22,7 @@ board.once('ready', function() {
     console.log('isDanger', isDanger);
     if (isDocked && ee1BatteryLevel === 50) {
       isOn = false;
-    } else if (isDocked && ee1BatteryLevel !== 50) {
+    } else if (isDocked && ee1BatteryLevel < 50) {
       isOn = true;
     } else if (!isDocked) {
       isOn = false;
