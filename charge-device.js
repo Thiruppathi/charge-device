@@ -1,7 +1,7 @@
 var five = require("johnny-five");
 var Firebase = require("firebase");
-
-var assetsRef = new Firebase("https://myjarvis.firebaseio.com/assets/");
+//Change ur Firebase URL name here.
+var assetsRef = new Firebase("https:<my-firebase>.firebaseio.com/assets/");
 
 var isOn = false;
 var assetId = 'EE1';
